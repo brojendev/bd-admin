@@ -2,11 +2,13 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { AuthRoutingModule } from './auth-routing.module';
-import { LoginComponent } from './login.component';
-import { ForgotPasswordComponent } from './forgot-password.component';
+import { AuthComponent } from './auth.component';
+import { LoginComponent } from './login/login.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { BlankLayoutComponent } from '../../@theme/layouts/blanklayout/blank.layout.component';
 
 @NgModule({
-  declarations: [LoginComponent, ForgotPasswordComponent],
+  declarations: [LoginComponent, ForgotPasswordComponent, AuthComponent, BlankLayoutComponent],
   imports: [
     CommonModule,
     AuthRoutingModule

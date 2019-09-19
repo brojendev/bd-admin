@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BlankLayoutComponent } from '../../@theme/layouts/blanklayout/blank.layout.component';
 
 @Component({
   selector: 'app-auth',
