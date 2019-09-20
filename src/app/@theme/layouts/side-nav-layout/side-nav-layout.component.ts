@@ -7,8 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SideNavLayoutComponent implements OnInit {
 
+  public isNavVisible = true;
   constructor() { }
 
+  toggleSideNavfn($event) {
+    this.isNavVisible = $event;
+  }
   ngOnInit() {
   }
 
