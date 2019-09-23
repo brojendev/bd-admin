@@ -179,6 +179,8 @@ input:focus{
   border-radius: 0 4px 4px 0px;
   width: 35px;
   transition-delay: 0.3s;
+  color: #fff;
+  z-index: 2;
 }
 .page-wrapper.toggled #show-sidebar {
   left: -40px;
@@ -463,7 +465,7 @@ input:focus{
 }
 
 .page-wrapper .page-content > div {
-  padding: 20px 40px;
+  padding: 16px 16px;
 }
 
 .page-wrapper .page-content {
