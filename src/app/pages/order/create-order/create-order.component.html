@@ -1,69 +1,99 @@
-<!-- Default form register -->
-<form class="text-center border border-light p-1" action="#!">
-
-    <p class="h4 mb-4">Sign up</p>
-
-    <!-- Subject -->
-    <label>Select Client</label>
-    <select class="browser-default custom-select mb-4">
-        <option value="" disabled>Choose option</option>
-        <option value="1" selected>Feedback</option>
-        <option value="2">Report a bug</option>
-        <option value="3">Feature request</option>
-        <option value="4">Feature request</option>
-    </select>
-
-    <div class="form-group">
-        <label class="float-left" for="exampleFormControlInput1">Email address</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+<form class="form-wrapper">
+    <div class="form-group row">
+        <label for="example-text-input" class="col-lg-2 col-md-12 col-sm-12 col-form-label">Text</label>
+        <div class="col-lg-10 col-md-12 col-sm-12">
+            <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
+        </div>
     </div>
-
-    <!-- E-mail -->
-    <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
-
-    <!-- Password -->
-    <input type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">
-    <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
-        At least 8 characters and 1 digit
-    </small>
-
-    <!-- Phone number -->
-    <input type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="Phone number" aria-describedby="defaultRegisterFormPhoneHelpBlock">
-    <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
-        Optional - for two step authentication
-    </small>
-
-    <!-- Newsletter -->
-    <div class="custom-control custom-checkbox">
-        <input type="checkbox" class="custom-control-input" id="defaultRegisterFormNewsletter">
-        <label class="custom-control-label" for="defaultRegisterFormNewsletter">Subscribe to our newsletter</label>
+    <div class="form-group row">
+        <label for="example-search-input" class="col-lg-2 col-md-12 col-sm-12 col-form-label">Search</label>
+        <div class="col-lg-10 col-md-12 col-sm-12">
+            <input class="form-control" type="search" value="How do I shoot web" id="example-search-input">
+        </div>
     </div>
-
-    <!-- Sign up button -->
-    <button class="btn btn-info my-4 btn-block" type="submit">Sign in</button>
-
-    <!-- Social register -->
-    <p>or sign up with:</p>
-
-    <a type="button" class="light-blue-text mx-2">
-        <i class="fab fa-facebook-f"></i>
-    </a>
-    <a type="button" class="light-blue-text mx-2">
-        <i class="fab fa-twitter"></i>
-    </a>
-    <a type="button" class="light-blue-text mx-2">
-        <i class="fab fa-linkedin-in"></i>
-    </a>
-    <a type="button" class="light-blue-text mx-2">
-        <i class="fab fa-github"></i>
-    </a>
-
-    <hr>
-
-    <!-- Terms of service -->
-    <p>By clicking
-        <em>Sign up</em> you agree to our
-        <a href="" target="_blank">terms of service</a>
-
+    <div class="form-group row">
+        <label for="example-email-input" class="col-lg-2 col-md-12 col-sm-12 col-form-label">Email</label>
+        <div class="col-lg-10 col-md-12 col-sm-12">
+            <input class="form-control" type="email" value="bootstrap@example.com" id="example-email-input">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="example-url-input" class="col-lg-2 col-md-12 col-sm-12 col-form-label">URL</label>
+        <div class="col-lg-10 col-md-12 col-sm-12">
+            <input class="form-control" type="url" value="https://getbootstrap.com" id="example-url-input">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="example-tel-input" class="col-lg-2 col-md-12 col-sm-12 col-form-label">Telephone</label>
+        <div class="col-lg-10 col-md-12 col-sm-12">
+            <input class="form-control" type="tel" value="1-(555)-555-5555" id="example-tel-input">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="example-password-input" class="col-lg-2 col-md-12 col-sm-12 col-form-label">Password</label>
+        <div class="col-lg-10 col-md-12 col-sm-12">
+            <input class="form-control" type="password" value="hunter2" id="example-password-input">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="example-number-input" class="col-lg-2 col-md-12 col-sm-12 col-form-label">Number</label>
+        <div class="col-lg-10 col-md-12 col-sm-12">
+            <input class="form-control" type="number" value="42" id="example-number-input">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="example-number-input" class="col-lg-2 col-md-12 col-sm-12 col-form-label">Select</label>
+        <div class="col-lg-10 col-md-12 col-sm-12">
+            <select class="form-control">
+                <option>Default select</option>
+                <option>Default select 1</option>
+                <option>Default select 2</option>
+                <option>Default select 3</option>
+                <option>Default select 4</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="example-datetime-local-input" class="col-lg-2 col-md-12 col-sm-12 col-form-label">Date and time</label>
+        <div class="col-lg-10 col-md-12 col-sm-12">
+            <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00"
+                id="example-datetime-local-input">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="example-date-input" class="col-lg-2 col-md-12 col-sm-12 col-form-label">Date</label>
+        <div class="col-lg-10 col-md-12 col-sm-12">
+            <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="example-month-input" class="col-lg-2 col-md-12 col-sm-12 col-form-label">Month</label>
+        <div class="col-lg-10 col-md-12 col-sm-12">
+            <input class="form-control" type="month" value="2011-08" id="example-month-input">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="example-week-input" class="col-lg-2 col-md-12 col-sm-12 col-form-label">Week</label>
+        <div class="col-lg-10 col-md-12 col-sm-12">
+            <input class="form-control" type="week" value="2011-W33" id="example-week-input">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="example-time-input" class="col-lg-2 col-md-12 col-sm-12 col-form-label">Time</label>
+        <div class="col-lg-10 col-md-12 col-sm-12">
+            <input class="form-control" type="time" value="13:45:00" id="example-time-input">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="example-color-input" class="col-lg-2 col-md-12 col-sm-12 col-form-label">Color</label>
+        <div class="col-lg-10 col-md-12 col-sm-12">
+            <input class="form-control" type="color" value="#563d7c" id="example-color-input">
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-12">
+            <button class="form-control" type="button" class="btn btn-outline-primary float-right btn-lg pr-4 pl-4">Save</button>
+            <button class="form-control" type="button" class="btn btn-outline-danger float-right btn-lg mr-1 pr-4 pl-4">Cancle</button>
+        </div>
+    </div>
 </form>
-<!-- Default form register -->

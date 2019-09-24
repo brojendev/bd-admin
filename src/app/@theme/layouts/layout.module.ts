@@ -4,13 +4,15 @@ import { SideNavLayoutComponent } from './side-nav-layout/side-nav-layout.compon
 import { BlankLayoutComponent } from './blanklayout/blank.layout.component';
 import { NavComponent } from '../component/nav/nav.component';
 import { TopNavComponent } from '../component/top-nav/top-nav.component';
+import { BreadcrumbNavComponent } from '../component/breadcrumb-nav/breadcrumb-nav.component';
 
 @NgModule({
   declarations: [
     SideNavLayoutComponent,
     BlankLayoutComponent,
     NavComponent,
-    TopNavComponent
+    TopNavComponent,
+    BreadcrumbNavComponent
   ],
   imports: [
     CommonModule
@@ -19,7 +21,8 @@ import { TopNavComponent } from '../component/top-nav/top-nav.component';
     SideNavLayoutComponent,
     BlankLayoutComponent,
     NavComponent,
-    TopNavComponent
+    TopNavComponent,
+    BreadcrumbNavComponent
   ]
 })
 export class LayoutModule { }

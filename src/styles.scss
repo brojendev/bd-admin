@@ -79,7 +79,7 @@ body {
 }
 
 body {
-    background: #ddd !important;
+    // background: #fff !important;
 }
 .card {
     border: 1px solid #28a745;
@@ -701,4 +701,11 @@ header .navbar {
     font-weight: 400;
     line-height: 50px;
     padding-left: 18px;
+}
+
+/* CSS for Forms */
+.form-wrapper{
+  margin: 0 auto;
+  max-width: 650px;
+  
 }
