@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { DataSharingService } from '../../../_services/data-sharing.service';
 @Component({
   selector: 'app-side-nav-layout',
@@ -8,26 +8,37 @@ import { DataSharingService } from '../../../_services/data-sharing.service';
 export class SideNavLayoutComponent implements OnInit {
 
   public isNavVisible = true;
-  public breadCrumb = [
-    {
-      name: 'Home',
-      link: '/dashboard',
-    },
-    {
-      name: 'Form',
-      link: '#'
-    }
-  ];
+  public breadCrumb = [];
   constructor(
     private dataSharingService: DataSharingService
-  ) { }
+  ) {
+    if (window.innerWidth < 960) {
+      this.isNavVisible = false;
+    } else {
+      this.isNavVisible = true;
+    }
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    if (event.target.innerWidth < 960) {
+      this.isNavVisible = false;
+    } else {
+      this.isNavVisible = true;
+    }
+  }
 
   toggleSideNavfn($event) {
     this.isNavVisible = $event;
   }
   ngOnInit() {
-    const sharedData = this.dataSharingService.getMessage();
-    sharedData.subscribe( message => console.log('Message', message));
+    // const sharedData = this.dataSharingService.getMessage();
+    this.dataSharingService.dataShareObj.subscribe( (message) => {
+      console.log('message', message);
+      if (message.data.breadcrumb !== undefined) {
+        this.breadCrumb = message.data.breadcrumb;
+      }
+    });
   }
 
 }

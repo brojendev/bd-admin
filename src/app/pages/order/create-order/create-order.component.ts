@@ -10,7 +10,15 @@ export class CreateOrderComponent implements OnInit {
   constructor(
     private dataSharingService: DataSharingService,
   ) {
-    const breadcrumb = [
+    this.sendMessage();
+  }
+
+  ngOnInit() {
+    this.sendMessage();
+  }
+
+  sendMessage(): void {
+    const breadcrumb = { breadcrumb: [
       {
         name: 'Home',
         link: '/dashboard',
@@ -19,16 +27,9 @@ export class CreateOrderComponent implements OnInit {
         name: 'Form',
         link: '#',
       }
-    ];
-    this.sendMessage(breadcrumb);
-  }
-
-  ngOnInit() {
-  }
-
-  sendMessage(data): void {
+    ]};
     // send message to subscribers via observable subject
-    this.dataSharingService.sendMessage(data);
+    this.dataSharingService.sendMessage(breadcrumb);
   }
 
 
