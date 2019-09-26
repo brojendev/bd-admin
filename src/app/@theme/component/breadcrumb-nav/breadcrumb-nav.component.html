@@ -1,5 +1,5 @@
 <nav aria-label="breadcrumb" *ngIf="navData.length > 0">
   <ol class="breadcrumb">
-    <li class="breadcrumb-item" *ngFor="let breadcrumb of navData"><a [href]="breadcrumb.link">{{breadcrumb.name}}</a></li>
+    <li class="breadcrumb-item" *ngFor="let breadcrumb of navData"><a [routerLink]="breadcrumb.link">{{breadcrumb.name}}</a></li>
   </ol>
 </nav>

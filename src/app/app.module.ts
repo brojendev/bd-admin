@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AuthModule } from './pages/auth/auth.module';
+// import { AuthModule } from './pages/auth/auth.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +12,7 @@ import { AuthModule } from './pages/auth/auth.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AuthModule,
+    // AuthModule,
   ],
   exports: [
   ],

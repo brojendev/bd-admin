@@ -17,6 +17,13 @@ export class SideNavLayoutComponent implements OnInit {
     } else {
       this.isNavVisible = true;
     }
+
+    // const sharedData = this.dataSharingService.getMessage();
+    this.dataSharingService.dataShareObj.subscribe( (message) => {
+      if (message.data.breadcrumb !== undefined) {
+        this.breadCrumb = message.data.breadcrumb;
+      }
+    });
   }
 
   @HostListener('window:resize', ['$event'])
@@ -32,13 +39,6 @@ export class SideNavLayoutComponent implements OnInit {
     this.isNavVisible = $event;
   }
   ngOnInit() {
-    // const sharedData = this.dataSharingService.getMessage();
-    this.dataSharingService.dataShareObj.subscribe( (message) => {
-      console.log('message', message);
-      if (message.data.breadcrumb !== undefined) {
-        this.breadCrumb = message.data.breadcrumb;
-      }
-    });
   }
 
 }

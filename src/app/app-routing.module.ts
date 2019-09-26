@@ -17,8 +17,12 @@ const routes: Routes = [
     loadChildren: './pages/dashboard/dashboard.module#DashboardModule'
   },
   {
-    path: 'order',
-    loadChildren: './pages/order/order.module#OrderModule',
+    path: 'forms',
+    loadChildren: './pages/forms/forms.module#FormsModule',
+  },
+  {
+    path: 'buttons',
+    loadChildren: './pages/buttons/buttons.module#ButtonsModule',
   }
 ];
 

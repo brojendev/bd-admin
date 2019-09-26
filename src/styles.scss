@@ -83,16 +83,20 @@ body {
 }
 .card {
     border: 1px solid #28a745;
+    margin-bottom: 16px;
 }
-.card-header {
-    color: #fff;
-    /*background: #ff0000;*/
-    font-family: sans-serif;
-    font-size: 20px;
-    font-weight: 600 !important;
-    margin-top: 10px;
-    border-bottom: 0;
+.btn{
+  margin: 8px 8px;
 }
+// .card-header {
+//     color: #fff;
+//     /*background: #ff0000;*/
+//     font-family: sans-serif;
+//     font-size: 20px;
+//     font-weight: 600 !important;
+//     margin-top: 10px;
+//     border-bottom: 0;
+// }
 
 .input-group-prepend span{
     width: 50px;
